@@ -46,8 +46,7 @@ document.getElementById('date').addEventListener('change', function () {
   renderBookings(this.value);
 });
 
-// Initial render
+// Initial render (if any date is pre-selected)
 if (document.getElementById('date').value) {
   renderBookings(document.getElementById('date').value);
 }
-
