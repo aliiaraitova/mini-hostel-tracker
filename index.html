@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hotel Tracker</title>
+  <title>Hostel Booking Calendar</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hotel Tracker</h1>
+  <h1>Mini Hostel Booking Calendar</h1>
 
-  <form id="guestForm">
+  <form id="bookingForm">
+    <input type="date" id="date" required />
     <input type="text" id="name" placeholder="Guest Name" required />
     <input type="number" id="room" placeholder="Room #" required />
-    <input type="number" id="payment" placeholder="Payment $" required />
-    <button type="submit">Check In</button>
+    <button type="submit">Book</button>
   </form>
 
-  <h2>Current Guests</h2>
-  <ul id="guestList"></ul>
+  <h2>Bookings for Selected Date</h2>
+  <ul id="bookingList"></ul>
 
   <script src="script.js"></script>
 </body>
 </html>
 
-<h2>Bookings for Selected Date</h2>
-<ul id="bookingList"></ul>
